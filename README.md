@@ -1,33 +1,55 @@
-[![progress-banner](https://backend.codecrafters.io/progress/redis/3e469698-f186-41e8-bb59-f915de83c90a)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
+# RedisDB Clone
 
-This is a starting point for C++ solutions to the
-["Build Your Own Redis" Challenge](https://codecrafters.io/challenges/redis).
+A simple Redis clone implemented in C++. This project is part of a Codecrafters.io challenge to build a basic version of the Redis key-value store from scratch.
 
-In this challenge, you'll build a toy Redis clone that's capable of handling
-basic commands like `PING`, `SET` and `GET`. Along the way we'll learn about
-event loops, the Redis protocol and more.
+## Features
 
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
+- Simple key-value storage system
+- Support for basic Redis commands
+- Implemented in C++
 
-# Passing the first stage
+## Prerequisites
 
-The entry point for your Redis implementation is in `src/Server.cpp`. Study and
-uncomment the relevant code, and push your changes to pass the first stage:
+- C++ Compiler (e.g., g++)
+- CMake (for building)
 
-```sh
-git commit -am "pass 1st stage" # any msg
-git push origin master
-```
+## Installation
 
-That's all!
+1. Clone the repository:
 
-# Stage 2 & beyond
+    ```bash
+    git clone https://github.com/SrinathhSatuluri/RedisDB.git
+    cd RedisDB
+    ```
 
-Note: This section is for stages 2 and beyond.
+2. Build the project using CMake:
 
-1. Ensure you have `cmake` installed locally
-1. Run `./your_program.sh` to run your Redis server, which is implemented in
-   `src/Server.cpp`.
-1. Commit your changes and run `git push origin master` to submit your solution
-   to CodeCrafters. Test output will be streamed to your terminal.
+    ```bash
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ```
+
+3. Run the application:
+
+    ```bash
+    ./redisdb
+    ```
+
+## Usage
+
+After running the application, you can use basic Redis commands like:
+
+- `SET key value` – Set a key-value pair
+- `GET key` – Retrieve the value for a key
+- `DEL key` – Delete a key
+
+## Contributing
+
+Feel free to fork the repository, make changes, and submit a pull request. Contributions are always welcome!
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
